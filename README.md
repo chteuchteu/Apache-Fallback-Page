@@ -7,6 +7,10 @@ This project allows you to serve a fancy page as an apache fallback vhost:
 Besides its coolness, this adds a little more security since it makes you aware of which vhost will be served if apache
 couldn't match any of your defined vhosts at first.
 
+This project contains translations for both english and french languages, one or another being picked once visiting `/`
+depending on preferred client language. Don't hesitate to contribute to add new fresh translations!
+If you want to customize its appearance, you can fork this project and edit the src/AppBundle/Resources/views/index.html.twig file.
+
 ## Deploying this project
 This project is compatible with [Simple-Deployment-Script](https://github.com/chteuchteu/Simple-Deployment-Script). See 
 [Symfony 2 & 3 notes](https://github.com/chteuchteu/Simple-Deployment-Script#symfony-2-and-3) if you need some help on
