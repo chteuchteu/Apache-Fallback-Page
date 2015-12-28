@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ 'resource_unavailable'|trans }}</title>
+	<link rel="stylesheet" href="{{ asset('bundles/app/css/style.css') }}">
+	<link href="{{ asset('bundles/app/css/materialdesignicons.min.css') }}" media="all" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ asset('bundles/app/favicons/apple-touch-icon-57x57.png') }}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ asset('bundles/app/favicons/apple-touch-icon-60x60.png') }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ asset('bundles/app/favicons/apple-touch-icon-72x72.png') }}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('bundles/app/favicons/apple-touch-icon-76x76.png') }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ asset('bundles/app/favicons/apple-touch-icon-114x114.png') }}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('bundles/app/favicons/apple-touch-icon-120x120.png') }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ asset('bundles/app/favicons/apple-touch-icon-144x144.png') }}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('bundles/app/favicons/apple-touch-icon-152x152.png') }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('bundles/app/favicons/apple-touch-icon-180x180.png') }}">
+	<link rel="icon" type="image/png" href="{{ asset('bundles/app/favicons/favicon-32x32.png') }}" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ asset('bundles/app/favicons/favicon-194x194.png') }}" sizes="194x194">
+	<link rel="icon" type="image/png" href="{{ asset('bundles/app/favicons/favicon-96x96.png') }}" sizes="96x96">
+	<link rel="icon" type="image/png" href="{{ asset('bundles/app/favicons/android-chrome-192x192.png') }}" sizes="192x192">
+	<link rel="icon" type="image/png" href="{{ asset('bundles/app/favicons/favicon-16x16.png') }}" sizes="16x16">
+	<link rel="manifest" href="{{ asset('bundles/app/favicons/manifest.json') }}">
+	<link rel="mask-icon" href="{{ asset('bundles/app/favicons/safari-pinned-tab.svg') }}" color="#5bbad5">
+	<link rel="shortcut icon" href="{{ asset('bundles/app/favicons/favicon.ico') }}">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="{{ asset('bundles/app/favicons/mstile-144x144.png') }}">
+	<meta name="msapplication-config" content="{{ asset('bundles/app/favicons/browserconfig.xml') }}">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<div class="alert">
+		<i class="mdi mdi-cloud-outline-off"></i>
+		<h1>{{ 'resource_unavailable'|trans }}</h1>
+		<p>{{ 'resource_unavailable_sentence'|trans }}</p>
+		<a href="http://www.s-quent.in/{{ app.request.locale }}/#contact">{{ 'contact'|trans }}</a>
+	</div>
+</body>
+</html>

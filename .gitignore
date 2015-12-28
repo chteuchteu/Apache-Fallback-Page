@@ -1,0 +1,17 @@
+/app/config/parameters.yml
+#/bin/
+/build/
+/composer.phar
+/vendor/
+/web/bundles/
+/var/
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+!var/sessions/.gitkeep
+/phpunit.xml
+.idea
+
+src/AppBundle/Resources/public/css/style.css
+src/AppBundle/Resources/public/css/style.css.map
+
+.sass-cache

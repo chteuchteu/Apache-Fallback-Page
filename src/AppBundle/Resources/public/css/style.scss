@@ -1,0 +1,71 @@
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
+}
+@mixin transition-duration($duration) {
+	-webkit-transition-duration: $duration;
+	-moz-transition-duration: $duration;
+	-o-transition-duration: $duration;
+	transition-duration: $duration;
+}
+@mixin box-shadow($shadow1, $shadow2:false) {
+	$params: $shadow1;
+	@if $shadow2 { $params: $shadow1, $shadow2; }
+	-webkit-box-shadow: $params;
+	-moz-box-shadow: $params;
+	-o-box-shadow: $params;
+	box-shadow: $params;
+}
+
+html, body {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #263238;
+	color: #fff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.alert {
+	margin: 150px 10px;
+
+	i.mdi {
+		font-size: 70px;
+		color: rgba(0, 0, 0, 0.5);
+	}
+	h1 {
+
+	}
+	p {
+		max-width: 300px;
+		margin: 16px auto;
+		@include opacity(0.7);
+		text-align: justify;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+		border: 1px solid;
+		padding: 8px 21px;
+		border-radius: 2px;
+		margin: 10px 0;
+		display: inline-block;
+		text-transform: uppercase;
+		@include box-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+		@include transition-duration(200ms);
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.05);
+			@include box-shadow(4px 4px 2px rgba(0, 0, 0, 0.3));
+		}
+		&:active {
+			background-color: rgba(255, 255, 255, 0.2);
+			@include box-shadow(none);
+		}
+	}
+}
